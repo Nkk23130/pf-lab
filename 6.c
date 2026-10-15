@@ -5,8 +5,8 @@ int main(){
 	int rowsum[3]={0};
 	int columnsum[4]={0};
 	int max=0;
-	int row[];
-	int column[];
+	int row;
+	int column;
 	
 	for(int i=0; i<3; i++){
 		for(int j=0; j<4; j++){
@@ -15,8 +15,8 @@ int main(){
 			columnsum[j]+=num[i][j];
 			if(num[i][j]>max){
 				max=num[i][j];
-				row[];
-				column[];
+				row=i;
+				column=j;
 			}
 			
 		}
@@ -24,7 +24,7 @@ int main(){
 		
 		
 	}
-	printf("max number is %d at index %d %d \n", max, row[], column[]);
+	printf("max number is %d at index %d %d \n", max, row, column);
 	
 	for(int i=0; i<3; i++){
 		printf("your matrix row sum is %d\n", rowsum[i]);
